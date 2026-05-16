@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: kube-news:dev
+    image: samuelfr7/kube-news:v1
     container_name: kube-news-app
     environment:
       NODE_ENV: development
