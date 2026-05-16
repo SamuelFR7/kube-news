@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: kube-news
     app.kubernetes.io/component: app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app.kubernetes.io/name: kube-news
     app.kubernetes.io/component: app
@@ -14,4 +14,3 @@ spec:
     - name: http
       port: 8080
       targetPort: http
-      nodePort: 30080
